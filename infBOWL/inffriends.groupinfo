@@ -1,0 +1,169 @@
+[block=floatcontainer]\
+[block=floatleft width=18%]
+[block=floatcontainer][block=floatleft width=100% bg=black fg=white][b]General:[/b][/block][/block]
+[toggle label=About infBOWL Friends block=about group=menu]
+[toggle label=Rules block=rules group=menu]
+[toggle label=Contact block=contact group=menu]
+
+[block=floatcontainer][block=floatleft width=100% bg=black fg=white][b]Tournaments:[/b][/block][/block]
+None yet
+[/block]\
+[block=floatright pad10 width=80%]\
+\
+[block id=about group=menu][font=serif][size=15]
+[b]The infBOWL Friends (aka. infFRIENDS) is a group of all infBOWL compatible teams.[/b] In future preseasons of [url=/p/group&group=8654&op=view]infBOWL[/url] there will be an opportunity to play a controlled amount of preparation matches. It will be allowed for group members to play those mathes not only among themselves, but also with teams of the infBOWL Friends. Playing matches in friends group keeps teams compatible with the tournament and some of them can possibly replace dropping teams with a fair TV level. There is a chance that infBOWL will start Season I with less than 24 teams. For teams which want to get a slot for next season this group is the waitroom. They can play matches here to get to a close TV level to the average of infBOWL teams.
+
+If there is enough members in the infFriends then we can start another championship or a tournament of any other format if there is a desire for that named as infBOWL2. However, tourneys here in the infFRIENDS are also possible.
+
+[/block]\
+[block=hidden id=rules group=menu][font=serif][size=15]
+\
+[block=center][b]Allowed Positionals[/b][/block]
+[/size][/font]\
+[block=automargin blackborder border2 pad5 width=60%]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Amazon[/block]\
+[block=floatleft width=77%]0-16 Linewomen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Chaos[/block]\
+[block=floatleft width=77%]0-16 Beastmen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Chaos Dwarf[/block]\
+[block=floatleft width=77%]0-16 Hobgoblins[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Chaos Pact[/block]\
+[block=floatleft width=77%]0-12 Marauders[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Dark Elf[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Dwarf[/block]\
+[block=floatleft width=77%]0-16 Blockers[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Elf[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Goblin[/block]\
+[block=floatleft width=77%]0-16 Goblins, 0-1 Looney, 0-1 Bombardier, 0-1 Troll[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Halfling[/block]\
+[block=floatleft width=77%]0-16 Halflings, 0-1 Treeman[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]High Elf[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Human[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Khemri[/block]\
+[block=floatleft width=77%]0-16 Skeleton[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Lizardmen[/block]\
+[block=floatleft width=77%]0-16 Skinks[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Necromantic[/block]\
+[block=floatleft width=77%]0-16 Zombies[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Norse[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Nurgle[/block]\
+[block=floatleft width=77%]0-16 Rotters[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Ogre[/block]\
+[block=floatleft width=77%]0-16 Snotlings, 0-3 Ogres[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Orc[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Skaven[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Slann[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Undead[/block]\
+[block=floatleft width=77%]0-16 Skeletons, 0-16 Zombies[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Underworld[/block]\
+[block=floatleft width=77%]0-16 Underworld Goblins, 0-1 Warpstone Troll[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Vampire[/block]\
+[block=floatleft width=77%]0-16 Thralls[/block]\
+[/block]\
+\
+[block=floatcontainer]\
+[block=floatleft width=23%]Wood Elf[/block]\
+[block=floatleft width=77%]0-16 Linemen[/block]\
+[/block]\
+\
+[/block][font=serif][size=15]\
+
+[block=center][b]Inducements[/b][/block]
+All teams can hire mercenaries of all positions but no star players. Why? Because of the inferiority of this league! All other inducements are allowed.
+
+[block=center][b]Application[/b][/block]
+Apply a team of which contains allowed positionals only according to the rule above.
+
+[block=center][b]Match Arrangement and Deadline Violation[/b][/block]
+Admins will open a PM conversation for matchmaking purposes, which will be considered the official platform to keep in touch with your opponent and arrange matches. If a game is not played until the deadline, the staff decides who is responsible and [i]boots his team[/i] from the tournament in question. All points regarding to his team are cleared retroactively. The use of the official conversation is not obligatory, just play the match in time!
+
+[block=center][b]Concessions[/b][/block]
+Concession is allowed in the infFRIENDS. Try to be fair though!
+\
+[/size][/font][/block]\
+[block=hidden id=contact group=menu][font=serif][size=15]
+\
+[block=center][b][url=/index.php?name=PNphpBB2&file=viewtopic&t=24128]Forum[/url][/b] in [url=/index.php?name=PNphpBB2&file=viewtopic&t=24128&postdays=0&postorder=asc&start=0]Ascending[/url] or  [url=/index.php?name=PNphpBB2&file=viewtopic&t=24128&postdays=0&postorder=dsc&start=0]Descending[/url] Order[/block]
+\
+[block=center][b][url=/p/messages?op=view&c=314445]Noticeboard[/url][/b] for Members Only[/block]
+\
+[block=center][b][url=/p/messages?op=new&to=SzieberthAdam]PM[/url][/b] to the Staff[/block]
+[/size][/font]\
+\
+[/block][/block]
