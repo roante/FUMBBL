@@ -12,7 +12,7 @@
 \
 \
 [block id=about group=menu][font=serif][size=15]
-[b]The infBOWL (aka. Inferior Bowl) is a round-robin championship for a maximum of 24 all-lineman teams, one of each race.[/b] Currently we try to get all 24 teams. If that seems impossible to achieve then we will start the first season. Deadlines are in a two weeks interval to let time for coaches to arrange their matches. Thus a season lasts maximum for a year long even the case of full house.
+[b]The infBOWL (aka. Inferior Bowl) is a round-robin championship for a maximum of 24 all-lineman teams (with minor exceptions), one of each race.[/b] It seems interesting how power relations of races change in a linemen only environment. In future seasons we can balance them abit by using custom rules like “Right Stuff prevents the Tackle skill when blocked”, but first we start with the regular ruleset. Deadlines are in a two weeks interval to let time for coaches to arrange their matches. Thus a season lasts maximum for a year long even the case of full house.
 
 [block=center][b]Clubs[/b][/block]
 [/size][/font]\
@@ -74,8 +74,8 @@
 \
 [block=floatcontainer][block=center]\
 [block=floatleft pad5 width=12%][img title=Halfling]/FUMBBL/Images/Race/halfling_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751518]ENThralling Infelicities[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Dalfort]Dalfort[/url][/block]\
 [/block][/block]\
 \
 [block=floatcontainer][block=center]\
@@ -159,8 +159,8 @@
 \
 [block=floatcontainer][block=center]\
 [block=floatleft pad5 width=12%][img title=Underworld]/FUMBBL/Images/Race/underworld_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751502]Warped Community[/url][/block]\
+[block=floatright pad10 width=30%][url=/~B_SIDE]B_SIDE[/url][/block]\
 [/block][/block]\
 \
 [block=floatcontainer][block=center]\
@@ -331,6 +331,32 @@ Concession is permitted for a coach immediately after he is unable to field at l
 [/size][/font][/block]\
 [block=hidden id=season1 group=menu][font=serif][size=15]
 \
-Currently we try to get all 24 teams. If that seems impossible to achieve then we will start the first season.
+[block=center][b]Prizes[/b][/block]
+\
+[block=floatcontainer]\
+[block=floatleft pad10][img]/i/409855[/img][/block]\
+[block=floatright pad10 width=85%]\
+[b]Winner:[/b]
+Ability to buy a player of any price. This player is never gonna count towards the quota.
+[/block]
+
+[block=floatcontainer]\
+[block=floatleft pad10][img]/i/409854[/img][/block]\
+[block=floatright pad10 width=85%]\
+[b]Second place:[/b]
+Ability to buy a player which price is less than or equal to 100k. If only linemen would satisfy this rule, then the team is allowed to buy the cheapest non-lineman player. This player is never gonna count towards the quota.
+[/block]
+
+[block=floatcontainer]\
+[block=floatleft pad10][img]/i/409853[/img][/block]\
+[block=floatright pad10 width=85%]\
+[b]Third place:[/b]
+Ability to buy a player which price is less than or equal to 70k. This player is never gonna count towards the quota. If only linemen would satisfy this rule or if the coach chooses it, then the team gets an exclusive contract which allows to hire a Star Player for once in the future. 
+[/block]\
+\
+[/block]\
+
+[block=center][b]Preseason[/b][/block]
+Currently we try to get all 24 teams. We wait until this sunday midnight no matters what. If someone applies until that time, we wait until next monday. If someone applies on monday, we wait until tuesday, and so on. From sunday if we got full house or an eventless day with no applicants, we start the first season. 
 \
 [/block][/block]
