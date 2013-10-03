@@ -13,169 +13,6 @@
 \
 [block id=about group=menu][font=serif][size=15]
 [b]The infBOWL (aka. Inferior Bowl) is a round-robin championship for a maximum of 24 all-lineman teams (with minor exceptions), one of each race.[/b] It seems interesting how power relations of races change in a linemen only environment. In future seasons we can balance them abit by using custom rules like “Right Stuff prevents the Tackle skill when blocked”, but first we start with the regular ruleset. Deadlines are in a two weeks interval to let time for coaches to arrange their matches. Thus a season lasts maximum for a year long even the case of full house.
-
-[block=center][b]Clubs[/b][/block]
-[/size][/font]\
-[block=floatcontainer][block=floatleft width=49%]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft width=12% bg=black fg=white]Race[/block]\
-[block=floatleft width=58% bg=black fg=white]Team[/block]\
-[block=floatright width=30% bg=black fg=white]Coach[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Amazon]/FUMBBL/Images/Race/amazon_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751310]Lowly ladies[/url][/block]\
-[block=floatright pad10 width=30%][url=/~bghandras]bghandras[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Chaos]/FUMBBL/Images/Race/chaos_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751232]Goats of Mass Destruction[/url][/block]\
-[block=floatright pad10 width=30%][url=/~BillBrasky]BillBrasky[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Chaos Dwarf]/FUMBBL/Images/Race/chaosdwarf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751273]Wolfriders of Mournguld[/url][/block]\
-[block=floatright pad10 width=30%][url=/~ilpars]ilpars[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Chaos Pact]/FUMBBL/Images/Race/chaospact_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751250]~Garbage Fail Kids~[/url][/block]\
-[block=floatright pad10 width=30%][url=/~akaRenton]akaRenton[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Dark Elf]/FUMBBL/Images/Race/darkelf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751286]Blackelves without soul[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Winni]Winni[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Dwarf]/FUMBBL/Images/Race/dwarf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751335]Lineman Warriors[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Tazeon]Tazeon[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Elf]/FUMBBL/Images/Race/elf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Goblin]/FUMBBL/Images/Race/goblin_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751809]Tsunami Wazahari[/url][/block]\
-[block=floatright pad10 width=30%][url=/~mRmU]mRmU[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Halfling]/FUMBBL/Images/Race/halfling_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751518]ENThralling Infelicities[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Dalfort]Dalfort[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=High Elf]/FUMBBL/Images/Race/highelf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751235]High Linos[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Throweck]Throweck[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Human]/FUMBBL/Images/Race/human_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Khemri]/FUMBBL/Images/Race/khemri_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[/block][block=floatright width=49%]\
-[block=floatcontainer][block=center]\
-[block=floatleft width=12% bg=black fg=white]Race[/block]\
-[block=floatleft width=58% bg=black fg=white]Team[/block]\
-[block=floatright width=30% bg=black fg=white]Coach[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Lizardmen]/FUMBBL/Images/Race/lizardman_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Necromantic]/FUMBBL/Images/Race/necromantic_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751189]Stoned City Secondaries[/url][/block]\
-[block=floatright pad10 width=30%][url=/~SzieberthAdam]SzieberthAdam[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Norse]/FUMBBL/Images/Race/norse_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751352]Line 'em up![/url][/block]\
-[block=floatright pad10 width=30%][url=/~MrPeakie]MrPeakie[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Nurgle]/FUMBBL/Images/Race/nurgle_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Ogre]/FUMBBL/Images/Race/ogre_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751349]Dumbville Monsters[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Burnalot]Burnalot[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Orc]/FUMBBL/Images/Race/orc_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Skaven]/FUMBBL/Images/Race/skaven_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Slann]/FUMBBL/Images/Race/slann_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751312]'Ickle speckled Frogs[/url][/block]\
-[block=floatright pad10 width=30%][url=/~AdyBrooke]AdyBrooke[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Undead]/FUMBBL/Images/Race/undead_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Underworld]/FUMBBL/Images/Race/underworld_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751502]Warped Community[/url][/block]\
-[block=floatright pad10 width=30%][url=/~B_SIDE]B_SIDE[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Vampire]/FUMBBL/Images/Race/vampire_32.png[/img][/block]\
-[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751472]Baron Hemora's Blood Donators[/url][/block]\
-[block=floatright pad10 width=30%][url=/~Madmin]Madmin[/url][/block]\
-[/block][/block]\
-\
-[block=floatcontainer][block=center]\
-[block=floatleft pad5 width=12%][img title=Wood Elf]/FUMBBL/Images/Race/woodelf_32.png[/img][/block]\
-[block=floatleft pad10 width=58%]...[/block]\
-[block=floatright pad10 width=30%]...[/block]\
-[/block][/block]\
-\
-[/block][/block][font=serif][size=15]\
 \
 [/size][/font][/block]\
 [block=hidden id=rules group=menu][font=serif][size=15]
@@ -331,6 +168,169 @@ Concession is permitted for a coach immediately after he is unable to field at l
 [/size][/font][/block]\
 [block=hidden id=season1 group=menu][font=serif][size=15]
 \
+[block=center][b]Clubs[/b][/block]
+[/size][/font]\
+[block=floatcontainer][block=floatleft width=49%]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft width=12% bg=black fg=white]Race[/block]\
+[block=floatleft width=58% bg=black fg=white]Team[/block]\
+[block=floatright width=30% bg=black fg=white]Coach[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Amazon]/FUMBBL/Images/Race/amazon_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751310]Lowly ladies[/url][/block]\
+[block=floatright pad10 width=30%][url=/~bghandras]bghandras[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Chaos]/FUMBBL/Images/Race/chaos_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751232]Goats of Mass Destruction[/url][/block]\
+[block=floatright pad10 width=30%][url=/~BillBrasky]BillBrasky[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Chaos Dwarf]/FUMBBL/Images/Race/chaosdwarf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751273]Wolfriders of Mournguld[/url][/block]\
+[block=floatright pad10 width=30%][url=/~ilpars]ilpars[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Chaos Pact]/FUMBBL/Images/Race/chaospact_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751250]~Garbage Fail Kids~[/url][/block]\
+[block=floatright pad10 width=30%][url=/~akaRenton]akaRenton[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Dark Elf]/FUMBBL/Images/Race/darkelf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751286]Blackelves without soul[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Winni]Winni[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Dwarf]/FUMBBL/Images/Race/dwarf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751335]Lineman Warriors[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Tazeon]Tazeon[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Elf]/FUMBBL/Images/Race/elf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Goblin]/FUMBBL/Images/Race/goblin_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751809]Tsunami Wazahari[/url][/block]\
+[block=floatright pad10 width=30%][url=/~mRmU]mRmU[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Halfling]/FUMBBL/Images/Race/halfling_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751518]ENThralling Infelicities[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Dalfort]Dalfort[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=High Elf]/FUMBBL/Images/Race/highelf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751235]High Linos[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Throweck]Throweck[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Human]/FUMBBL/Images/Race/human_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751931]Common Assault[/url][/block]\
+[block=floatright pad10 width=30%][url=/~mike467]mike467[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Khemri]/FUMBBL/Images/Race/khemri_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[/block][block=floatright width=49%]\
+[block=floatcontainer][block=center]\
+[block=floatleft width=12% bg=black fg=white]Race[/block]\
+[block=floatleft width=58% bg=black fg=white]Team[/block]\
+[block=floatright width=30% bg=black fg=white]Coach[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Lizardmen]/FUMBBL/Images/Race/lizardman_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Necromantic]/FUMBBL/Images/Race/necromantic_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751189]Stoned City Secondaries[/url][/block]\
+[block=floatright pad10 width=30%][url=/~SzieberthAdam]SzieberthAdam[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Norse]/FUMBBL/Images/Race/norse_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751352]Line 'em up![/url][/block]\
+[block=floatright pad10 width=30%][url=/~MrPeakie]MrPeakie[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Nurgle]/FUMBBL/Images/Race/nurgle_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Ogre]/FUMBBL/Images/Race/ogre_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751349]Dumbville Monsters[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Burnalot]Burnalot[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Orc]/FUMBBL/Images/Race/orc_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Skaven]/FUMBBL/Images/Race/skaven_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751940]League of Ordinary Ratmen[/url][/block]\
+[block=floatright pad10 width=30%][url=/~zooms]zooms[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Slann]/FUMBBL/Images/Race/slann_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751312]'Ickle speckled Frogs[/url][/block]\
+[block=floatright pad10 width=30%][url=/~AdyBrooke]AdyBrooke[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Undead]/FUMBBL/Images/Race/undead_32.png[/img][/block]\
+[block=floatleft pad10 width=58%]...[/block]\
+[block=floatright pad10 width=30%]...[/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Underworld]/FUMBBL/Images/Race/underworld_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751502]Warped Community[/url][/block]\
+[block=floatright pad10 width=30%][url=/~B_SIDE]B_SIDE[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Vampire]/FUMBBL/Images/Race/vampire_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751472]Baron Hemora's Blood Donators[/url][/block]\
+[block=floatright pad10 width=30%][url=/~Madmin]Madmin[/url][/block]\
+[/block][/block]\
+\
+[block=floatcontainer][block=center]\
+[block=floatleft pad5 width=12%][img title=Wood Elf]/FUMBBL/Images/Race/woodelf_32.png[/img][/block]\
+[block=floatleft pad10 width=58%][url=/p/team?op=view&team_id=751921]Unseen Academicelfs[/url][/block]\
+[block=floatright pad10 width=30%][url=/~mridcully]mridcully[/url][/block]\
+[/block][/block]\
+\
+[/block][/block][font=serif][size=15]\
+
 [block=center][b]Prizes[/b][/block]
 \
 [block=floatcontainer]\
@@ -351,12 +351,13 @@ Ability to buy a player which price is less than or equal to 100k. If only linem
 [block=floatleft pad10][img]/i/409853[/img][/block]\
 [block=floatright pad10 width=85%]\
 [b]Third place:[/b]
-Ability to buy a player which price is less than or equal to 70k. This player is never gonna count towards the quota. If only linemen would satisfy this rule or if the coach chooses it, then the team gets an exclusive contract which allows to hire a Star Player for once in the future. 
+Ability to buy a player which price is less than or equal to 70k. This player is never gonna count towards the quota. If only linemen would satisfy this rule or if the coach chooses it, then the team gets an exclusive contract which allows to hire a Star Player for once in the future.
 [/block]\
 \
-[/block]\
+[/block]
+The first three teams will be not allowed to play any matches in preseason of Season II. The rest will have a chance to get some prizes aswell and to prepare themselves for the next season.
 
 [block=center][b]Preseason[/b][/block]
-Currently we try to get all 24 teams. We wait until this sunday midnight no matters what. If someone applies until that time, we wait until next monday. If someone applies on monday, we wait until tuesday, and so on. From sunday if we got full house or an eventless day with no applicants, we start the first season. 
+Preseason ended with 18 teams recruited. This preseason there were no matches.
 \
 [/block][/block]
