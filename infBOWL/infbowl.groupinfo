@@ -12,7 +12,9 @@
 \
 \
 [block id=about group=menu][font=serif][size=15]
-[b]The infBOWL (aka. Inferior Bowl) is a round-robin championship for a maximum of 24 all-lineman teams (with minor exceptions), one of each race.[/b] It seems interesting how power relations of races change in a linemen only environment. In future seasons we can balance them abit by using custom rules like “Right Stuff prevents the Tackle skill when blocked”, but first we start with the regular ruleset. Deadlines are in a two weeks interval to let time for coaches to arrange their matches. Thus a season lasts maximum for a year long even the case of full house.
+[b]The infBOWL (aka. Inferior Bowl) is a round-robin championship for a maximum of 24 all-lineman teams (with minor exceptions), one of each race.[/b] It seems interesting how power relations of races change in a linemen only environment. In future seasons we can balance them abit by using custom rules like “Right Stuff prevents the Tackle skill when blocked”, but first we start with the regular ruleset.
+
+Deadlines are in a two weeks interval to let time for coaches to arrange their matches. More precisely there are two weeks form the date the last match was played in previous round. It provides more flexibility since when coaches play the schedule faster, the league can adapt. One way or another, a season can last for a maximum of a year long even the case of full house.
 \
 [/size][/font][/block]\
 [block=hidden id=rules group=menu][font=serif][size=15]
@@ -144,10 +146,14 @@
 [/block][font=serif][size=15]\
 
 [block=center][b]Inducements[/b][/block]
-All teams can hire mercenaries of all positions but no star players. Why? Because of the inferiority of this league! All other inducements are allowed. No cards in this league!
+All teams can hire mercenaries of all positions but [i]no star players[/i]. Why? Because of the inferiority of this league! All other inducements are allowed. No cards in this league!
 
 [block=center][b]Application[/b][/block]
 Check which races are available in the about page. Choose one of them and apply a team of that race which contains allowed positionals only according to the rule above. In case of more applicants of the same race at the same time, the coach with more matches with that race gets the slot. The other coach does not need to retire his team immediately: In case of the dropping he gets the slot.
+
+[block=center][i]Booted coaches who may not ever enter again:[/i]
+[url=/~Tazeon][img title=Tazeon (2013-10-17; missed the deadline)]/ic/dlongbeard1.gif[/img][/url]\
+[/block]
 
 [block=center][b]Match Arrangement and Deadline Violation[/b][/block]
 Admins will open a PM conversation for matchmaking purposes, which will be considered the official platform to keep in touch with your opponent and arrange matches. If a game is not played until the deadline, the staff decides who is responsible and [i]bans him from the series forever[/i]. All points regarding to his team are cleared retroactively. The use of the official conversation is not obligatory, just play the match in time!
@@ -361,3 +367,4 @@ The first three teams will be not allowed to play any matches in preseason of Se
 Preseason ended with 18 teams recruited. This preseason there were no matches.
 \
 [/block][/block]
+
