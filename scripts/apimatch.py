@@ -176,3 +176,12 @@ API."""
             break
         startpage += 1
 
+def played_since(datetime_obj):
+    """Returns the IDs of coaches who played at least a match
+since the given time."""
+    result, iterator = set(), get_matches(endpage=None)
+    matchobj = next(iterator)
+    while matchobj.date() >= datetime_obj:
+        result |= {t.coachid() for t in matchobj.teams()}
+        matchobj = next(iterator)
+    return result

@@ -24,93 +24,128 @@
 import re
 import sys
 from collections import namedtuple
+from os import remove, rename
 from os.path import exists
 from time import strftime, strptime
 from urllib import request
 
 URL = "http://fumbbl.com/FUMBBL.php?page=coachinfo&coach="
 
-CoachInfo = namedtuple("CoachInfo", ("id", "nickname", "joined",
-    "realname", "location", "record"))
+CoachInfo = namedtuple("CoachInfo", ("coachid", "nickname",
+    "joined", "realname", "location", "record"))
 
-def profile(page):
+def profile_info(profile_page):
+    """Returns a dictionary of a FUMBBL coach's profile data."""
     d = {}
     p = {
-        "nick_name": "<div style=\"text-align: center; " +
+        "nickname": "<div style=\"text-align: center; " +
             "font-size: 2em;\">\s*(.*?)\s*</div>",
-        "real_name": "<b>Real Name:</b>\s*(.+?)\s*<br />",
+        "realname": "<b>Real Name:</b>\s*(.+?)\s*<br />",
         "location": "<b>Location:</b>\s*(.+?)\s*<br />",
         "joined": "<b>Member since:</b>\s*(.+?)\s*<br />",
         }
-    order = ("nick_name", "joined", "real_name", "location")
     for key, pat in p.items():
         try:
-            s = re.search(pat, page).group(1).replace(";", ",")
+            s = re.search(pat, profile_page).group(1)
         except AttributeError:
             s = ""
+        else:
+            # I make it CSV compatible
+            s = s.replace(";", "\semicol")
         d[key] = s
+    # All profile page should have data of "Member since"
     if not d["joined"].strip():
         return
     for s in {"st", "nd", "rd", "th"}:
         d["joined"] = d["joined"].replace(s + ",", "").strip()
     d["joined"] = strptime(d["joined"], "%B %d %Y")
     d["joined"] = strftime("%Y-%m-%d", d["joined"])
-    return [d[k] for k in order]
-
-def record(page):
-    pattern = re.compile(r"""
+    record_pat = re.compile(r"""
         <b>Total&nbsp;Record:</b></td><td\salign="right">
         (?P<w>\d+?)&nbsp;/&nbsp;
         (?P<d>\d+?)&nbsp;/&nbsp;
         (?P<l>\d+?)</td></tr>
         """, re.X)
-    result = pattern.search(page)
     try:
-        return "{}/{}/{}".format(*result.groups())
+        d["record"] = "{}/{}/{}".format(
+            *record_pat.search(profile_page).groups())
     except AttributeError:
-        return "0/0/0"
+        d["record"] = "0/0/0"
+    return d
 
-def coachdata(coachid):
+def get_coachinfo(coachid):
+    """Returns the CoachInfo namedtuple of a given coachid in
+the following format:
+    (coachid, nickname, joined, realname, location, record)"""
     url = URL + str(coachid)
     response = request.urlopen(url)
     page = response.read().decode("utf-8")
-    return profile(page), record(page)
+    profile_info_dict = profile_info(page)
+    profile_info_dict["coachid"] = str(coachid)
+    return CoachInfo(**profile_info_dict)
 
-def generate_coach_csv(filepath, startid, endid, ignore=100,
-    verbose=True):
-    with open(filepath, "a", encoding="utf-8") as f:
-        i, profile_, ignore_ = startid, "INITIAL", ignore
+def generate_coach_csv(csv_file_path, startid, endid,
+    ignore=100, verbose=True):
+    """Appends FUMBBL coaches' data in CSV format to the given
+csv file, according to the given FUMBBL coach ID range.
+
+The function excludes IDs without an actual coach record and the
+loop stops after <ignore> amount of such IDs.
+
+If verbose is set, the function prints the CSV data lines to the
+screen."""
+    with open(csv_file_path, "a", encoding="utf-8") as f:
+        i, ignore_ = startid, ignore
         while ignore_ and (startid <= i <= endid):
-            profile_, record_ = coachdata(i)
-            i += 1
-            if not profile_ or not profile_[0]:
+            try:
+                coachinfo = get_coachinfo(i)
+            except TypeError:
+                coachinfo = None, None
+            if not coachinfo[1]:
+                i += 1
                 ignore_ -=1
                 continue
-            ignore_ = ignore
-            nick, joined, real_name, location = profile_
-            s = ";".join((str(i-1), nick, joined, real_name,
-                location, record_))
+            ignore_, csv_string = ignore, ";".join(coachinfo)
             if verbose:
-                print(s.encode("utf-8", "ignore"))
-            f.write(s+ "\n")
+                print(csv_string.encode("utf-8", "ignore"))
+            f.write(csv_string + "\n")
+            i += 1
 
-def lastid(filepath):
-    with open(filepath, 'r', encoding="utf-8") as f:
+def update_coach_csv(csv_file_path, coach_id_seq, verbose=True):
+    """Updates the given coaches' data in a coach CSV file."""
+    # First I rename the CSV file to a BAK file.
+    bak_file = csv_file_path + ".bak"
+    rename(csv_file_path, bak_file)
+    with open(csv_file_path, "a", encoding="utf-8") as f:
+        for coachinfo in csv_coachinfo_iterator(bak_file):
+            if int(coachinfo.coachid) in coach_id_seq:
+                coachinfo = get_coachinfo(coachinfo.coachid)
+                csv_string = ";".join(coachinfo)
+                if verbose:
+                    print(csv_string.encode("utf-8", "ignore"))
+            csv_string = ";".join(coachinfo)
+            f.write(csv_string + "\n")
+    remove(bak_file)
+
+def csv_lastid(csv_file_path):
+    """Returns the last coach ID of a coach CSV file."""
+    with open(csv_file_path, 'r', encoding="utf-8") as f:
         for line in f:
             i = line[:line.find(";")]
     return int(i)
 
-def coachinfo(filepath, nickname):
-    iterator = coachinfos(filepath)
+def csv_coachinfo_by_nickname(csv_file_path, nickname):
+    """Returns the coach ID of a coach nickname."""
+    iterator = coachinfos(csv_file_path)
     for c in iterator:
         if c.nickname == nickname:
             return c
 
-def coachinfos(filepath):
-    with open(filepath, 'r', encoding="utf-8") as f:
+def csv_coachinfo_iterator(csv_file_path):
+    """Generates CoachInfo namedtuples of the given CSV file."""
+    with open(csv_file_path, 'r', encoding="utf-8") as f:
         for line in f:
             yield CoachInfo(*line[:-1].split(";"))
-
 
 if __name__ == '__main__':
     print("FUMBBL Coach CSV generator v0.1 by Szieberth Ádám\n")
@@ -125,7 +160,7 @@ Options:
                 (default=100)
     /v      verbose mode""")
         sys.exit()
-    filepath, options = sys.argv[1], {}
+    csv_file_path, options = sys.argv[1], {}
     if len(sys.argv) > 2:
         for o in sys.argv[2:]:
             if not o.startswith("/"):
@@ -139,10 +174,10 @@ Options:
     # If the CSV file exsists at the given location and no
     # startid was given, then I set startid to the last id + 1
     # of the CSV file.
-    if exists(filepath) and not "s" in options:
-        options["s"] = lastid(filepath)
+    if exists(csv_file_path) and not "s" in options:
+        options["s"] = csv_lastid(csv_file_path) + 1
     generate_coach_csv(
-        filepath = filepath,
+        csv_file_path = csv_file_path,
         startid = options.get("s", 1),
         endid = options.get("e", 1000000),
         ignore = options.get("i", 100),
