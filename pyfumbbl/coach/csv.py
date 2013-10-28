@@ -1,6 +1,6 @@
 """Module for getting CSV data of FUMBBL coaches."""
 
-# coachcsv.py by Adam Szieberth (2013)
+# pyfumbbl/coach/csv.py by Adam Szieberth (2013)
 # Python 3.3
 
 # Full license text:
