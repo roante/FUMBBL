@@ -31,7 +31,7 @@ from urllib import request
 
 URL = "http://fumbbl.com/FUMBBL.php?page=coachinfo&coach="
 
-CoachInfo = namedtuple("CoachInfo", ("coachid", "nickname",
+CoachInfo = namedtuple("CoachInfo", ("coach_id", "nickname",
     "joined", "realname", "location", "record"))
 
 def profile_info(profile_page):
@@ -73,15 +73,15 @@ def profile_info(profile_page):
         d["record"] = "0/0/0"
     return d
 
-def get_coachinfo(coachid):
-    """Returns the CoachInfo namedtuple of a given coachid in
+def get_coachinfo(coach_id):
+    """Returns the CoachInfo namedtuple of a given coach_id in
 the following format:
-    (coachid, nickname, joined, realname, location, record)"""
-    url = URL + str(coachid)
+    (coach_id, nickname, joined, realname, location, record)"""
+    url = URL + str(coach_id)
     response = request.urlopen(url)
     page = response.read().decode("utf-8")
     profile_info_dict = profile_info(page)
-    profile_info_dict["coachid"] = str(coachid)
+    profile_info_dict["coach_id"] = str(coach_id)
     return CoachInfo(**profile_info_dict)
 
 def generate_coach_csv(csv_file_path, startid, endid,
@@ -111,19 +111,23 @@ screen."""
             f.write(csv_string + "\n")
             i += 1
 
-def update_coach_csv(csv_file_path, coach_id_seq, verbose=True):
+def _update_coach_csv(
+    csv_file_path,
+    new_coachinfo_dict,
+    verbose=True):
     """Updates the given coaches' data in a coach CSV file."""
     # First I rename the CSV file to a BAK file.
     bak_file = csv_file_path + ".bak"
     rename(csv_file_path, bak_file)
     with open(csv_file_path, "a", encoding="utf-8") as f:
         for coachinfo in csv_coachinfo_iterator(bak_file):
-            if int(coachinfo.coachid) in coach_id_seq:
-                coachinfo = get_coachinfo(coachinfo.coachid)
-                csv_string = ";".join(coachinfo)
+            if int(coachinfo.coach_id) in new_coachinfo_dict:
+                c = new_coachinfo_dict[int(coachinfo.coach_id)]
+                csv_string = ";".join(c)
                 if verbose:
                     print(csv_string.encode("utf-8", "ignore"))
-            csv_string = ";".join(coachinfo)
+            else:
+                csv_string = ";".join(coachinfo)
             f.write(csv_string + "\n")
     remove(bak_file)
 
