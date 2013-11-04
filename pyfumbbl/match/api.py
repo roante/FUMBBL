@@ -27,12 +27,13 @@ from time import strptime
 from urllib import parse, request
 
 from const import DIVISIONS
-from match import Match
+
+## > Constants
 
 DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 URL = "http://fumbbl.com/xml:matches"
 
-def _get_match_dict(match_et_element):
+def _get_match_info(match_et_element):
     e, result = match_et_element, {}
     result["match_id"] = int(e.attrib["id"])
     result["date"] = _get_match_date(e)
@@ -56,7 +57,6 @@ def _get_team_performance_dict(team_et_element):
     result["TW"] =  int(e.find("tournamentWeight").text) // 1000
     result["touchdowns"] = int(e.find("touchdowns").text)
     result["casualties"], _cas_e = {}, e.find("casualties")
-    result["casualties"]["total"] = int(_cas_e.attrib["total"])
     result["casualties"]["bh"] = int(_cas_e.find("bh").text)
     result["casualties"]["si"] = int(_cas_e.find("si").text)
     result["casualties"]["kill"] = int(_cas_e.find("kill").text)
@@ -81,8 +81,10 @@ def get_match_ets(
     startpage = 1,
     endpage = 1,
     ):
-    """Generator which yields match ElementTree (XML) objects
-provided by the FUMBBL API."""
+    """
+    Generator which yields match ElementTree (XML) objects
+    provided by the FUMBBL API.
+    """
     parse_data = {}
     if match_id:
         parse_data["m"] = match_id
@@ -90,6 +92,10 @@ provided by the FUMBBL API."""
         parse_data["c"] = coach_id
     while True:
         parse_data["p"] = startpage
+        url = URL + '?' + parse.urlencode(parse_data)
+        response = request.urlopen(url)
+        page = response.read().decode("utf-8")
+        matches = iter(ET.fromstring(page))
         # I try to yield one Match() object. If it fails, then
         # the while loop breaks immediately.
         yield next(matches)
@@ -100,20 +106,18 @@ provided by the FUMBBL API."""
             break
         startpage += 1
 
-def get_match_objs(
+def get_match_info(
     match_id = None,
     coach_id = None,
     startpage = 1,
     endpage = 1,
     ):
     iterator = get_match_ets(
-    match_id = match_id,
-    coach_id = coach_id,
-    startpage = startpage,
-    endpage = endpage,
-    )
+        match_id = match_id,
+        coach_id = coach_id,
+        startpage = startpage,
+        endpage = endpage,
+        )
     for match_et in iterator:
-        match_obj = Match()
-        match_obj.update(_get_match_dict(match_et))
-        yield match_obj
+        yield _get_match_info(match_et)
 
